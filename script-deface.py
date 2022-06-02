@@ -39,5 +39,5 @@ def scv1():
 os.system('clear')
 mulai = input(f"{RED}enter {RESET}untuk melanjutkan ke {CYAN}menu{GREEN}...")
 if mulai == "":
-  scv1()
+  scv1(name_file)
   os.system('mv -t '+name_file+' /sdcard && rm -rf '+name_file)
