@@ -32,7 +32,7 @@ def scv1():
   time.sleep(2)
   file = open(f"{name_file}.html", 'a')
   file.write(f'<html><head><title>HEACKED BY.'+title+'</title><style>body{background: '+background+';font-family: Courier;align-items: center;text-align: center;background-position: center;background-repeat: no-repeat;}.judul{position: relative;font-size: 25px;color: '+color_name+';text-shadow: 2px 2px 5px red;font-family: comic;top: 30px;}.foto{position: relative;top: 80px;width: 100%;overflow: hidden;}.paragraf{position: relative;color: white;overflow: scroll;width: 100%;height: 250px;}marquee{position: relative;color: #3ff7ff;font-size: 19px;float: right;top: 0;}.mar{font-size: 20px;color: red;float: left;}</style></head><body><div class="judul"><label class="judul"><b>'+nama+'</b></label></div><div class="foto"><img width="200px" height="200px" src="'+link_foto+'" alt="" /><div class="paragraf"><p align="center">'+teks+'</p></div></div><label class="mar"><b>MY TEAM :</b></label><marquee width="65%" height="35px" direction="right">'+team+'</marquee></body></html>')
-  os.system('mv -f '+name_file+'/sdcard')
+  os.system('mv -f '+name_file+'/sdcard && rm -rf '+name_file)
   print(CYAN+"DONE FILE SUDAH TERSIMPAN...")
 ##########################################
 ################# START ##################
