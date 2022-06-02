@@ -40,4 +40,4 @@ def scv1():
 os.system('clear')
 mulai = input(f"{RED}enter {RESET}untuk melanjutkan ke {CYAN}menu{GREEN}...")
 if mulai == "":
-  menu()
+  scv1()
